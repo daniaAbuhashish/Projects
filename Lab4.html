@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>INST377 - Class Page</title>
+    <link rel="stylesheet" href="INST377Week4-Javascript-lecture.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="bar">
+        <h1>INST377 - Lab 4</h1>
+    </header>
+
+    <div class="section">
+        <form id="alertForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <button type="button" id="alertBtn" onclick="ViewAlert()">Alert Me</button>
+        </form>
+    </div>
+
+    <div class="section">
+        <button id="ChangeColor">Change Color</button>
+    </div>
+
+    <div class="section">
+        <form id="textForm">
+            <label for="textInput">Text:</label>
+            <input type="Text" id="textInput">
+            <button type="button" id="validateBtn">Validate Text</button>
+        </form>
+    </div>
+
+    <div class="section">
+        <button id="addTextBtn">Add Text</button>
+    </div>
+
+    <script>
+        function ViewAlert() {
+            var nameValue = document.getElementById('name').value;
+            alert("Hi " + nameValue + "!");
+        }
+    </script>
+</body>
+</html>
